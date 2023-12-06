@@ -24,6 +24,7 @@
 		FA06FD552B20EFB800C9AC7F /* SecondProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA06FD4F2B20EFB800C9AC7F /* SecondProtocols.swift */; };
 		FA06FD562B20EFB800C9AC7F /* SecondInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA06FD502B20EFB800C9AC7F /* SecondInteractor.swift */; };
 		FA06FD572B20EFB800C9AC7F /* SecondContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA06FD512B20EFB800C9AC7F /* SecondContainer.swift */; };
+		FA06FD5B2B20F88800C9AC7F /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA06FD5A2B20F88800C9AC7F /* AppCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		FA06FD4F2B20EFB800C9AC7F /* SecondProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondProtocols.swift; sourceTree = "<group>"; };
 		FA06FD502B20EFB800C9AC7F /* SecondInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondInteractor.swift; sourceTree = "<group>"; };
 		FA06FD512B20EFB800C9AC7F /* SecondContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondContainer.swift; sourceTree = "<group>"; };
+		FA06FD5A2B20F88800C9AC7F /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,13 +80,10 @@
 		FA06FD242B20ED5A00C9AC7F /* KGLaVIPER */ = {
 			isa = PBXGroup;
 			children = (
+				FA06FD582B20F80C00C9AC7F /* Application */,
 				FA06FD3D2B20EF6800C9AC7F /* Modules */,
 				FA06FD392B20EE2C00C9AC7F /* Common */,
-				FA06FD252B20ED5A00C9AC7F /* AppDelegate.swift */,
-				FA06FD272B20ED5A00C9AC7F /* SceneDelegate.swift */,
-				FA06FD2E2B20ED5D00C9AC7F /* Assets.xcassets */,
-				FA06FD302B20ED5D00C9AC7F /* LaunchScreen.storyboard */,
-				FA06FD332B20ED5D00C9AC7F /* Info.plist */,
+				FA06FD592B20F82600C9AC7F /* Supporting */,
 			);
 			path = KGLaVIPER;
 			sourceTree = "<group>";
@@ -138,6 +137,26 @@
 				FA06FD512B20EFB800C9AC7F /* SecondContainer.swift */,
 			);
 			path = Second;
+			sourceTree = "<group>";
+		};
+		FA06FD582B20F80C00C9AC7F /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				FA06FD252B20ED5A00C9AC7F /* AppDelegate.swift */,
+				FA06FD272B20ED5A00C9AC7F /* SceneDelegate.swift */,
+				FA06FD5A2B20F88800C9AC7F /* AppCoordinator.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		FA06FD592B20F82600C9AC7F /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				FA06FD2E2B20ED5D00C9AC7F /* Assets.xcassets */,
+				FA06FD302B20ED5D00C9AC7F /* LaunchScreen.storyboard */,
+				FA06FD332B20ED5D00C9AC7F /* Info.plist */,
+			);
+			path = Supporting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,6 +233,7 @@
 				FA06FD562B20EFB800C9AC7F /* SecondInteractor.swift in Sources */,
 				FA06FD262B20ED5A00C9AC7F /* AppDelegate.swift in Sources */,
 				FA06FD522B20EFB800C9AC7F /* SecondPresenter.swift in Sources */,
+				FA06FD5B2B20F88800C9AC7F /* AppCoordinator.swift in Sources */,
 				FA06FD492B20EF9000C9AC7F /* FirstInteractor.swift in Sources */,
 				FA06FD282B20ED5A00C9AC7F /* SceneDelegate.swift in Sources */,
 				FA06FD452B20EF9000C9AC7F /* FirstPresenter.swift in Sources */,
@@ -365,7 +385,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8A8R6ZQST8;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = KGLaVIPER/Info.plist;
+				INFOPLIST_FILE = KGLaVIPER/Supporting/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -396,7 +416,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8A8R6ZQST8;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = KGLaVIPER/Info.plist;
+				INFOPLIST_FILE = KGLaVIPER/Supporting/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
