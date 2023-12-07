@@ -23,6 +23,7 @@ final class PersonalityViewController: UIViewController {
     
 	override func viewDidLoad() {
 		super.viewDidLoad()
+        
 	}
 }
 

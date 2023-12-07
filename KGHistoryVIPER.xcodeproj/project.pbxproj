@@ -37,10 +37,14 @@
 		FA6CEF122B21DB9900FFD6C2 /* SettingsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CEF0C2B21DB9900FFD6C2 /* SettingsProtocols.swift */; };
 		FA6CEF132B21DB9900FFD6C2 /* SettingsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CEF0D2B21DB9900FFD6C2 /* SettingsInteractor.swift */; };
 		FA6CEF142B21DB9900FFD6C2 /* SettingsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CEF0E2B21DB9900FFD6C2 /* SettingsContainer.swift */; };
+		FADB26232B22137A002A33D4 /* HistoryCollectionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB26222B22137A002A33D4 /* HistoryCollectionCollectionViewCell.swift */; };
+		FADB26252B2213EE002A33D4 /* ReuseIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB26242B2213EE002A33D4 /* ReuseIdentifier.swift */; };
+		FADB26272B222E0F002A33D4 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB26262B222E0F002A33D4 /* Styles.swift */; };
+		FADB262A2B222E58002A33D4 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB26292B222E58002A33D4 /* Localization.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FA06FD222B20ED5A00C9AC7F /* KGLaVIPER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KGLaVIPER.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA06FD222B20ED5A00C9AC7F /* KGHistoryVIPER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KGHistoryVIPER.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA06FD252B20ED5A00C9AC7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA06FD272B20ED5A00C9AC7F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FA06FD2E2B20ED5D00C9AC7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -72,6 +76,10 @@
 		FA6CEF0C2B21DB9900FFD6C2 /* SettingsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsProtocols.swift; sourceTree = "<group>"; };
 		FA6CEF0D2B21DB9900FFD6C2 /* SettingsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsInteractor.swift; sourceTree = "<group>"; };
 		FA6CEF0E2B21DB9900FFD6C2 /* SettingsContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsContainer.swift; sourceTree = "<group>"; };
+		FADB26222B22137A002A33D4 /* HistoryCollectionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCollectionCollectionViewCell.swift; sourceTree = "<group>"; };
+		FADB26242B2213EE002A33D4 /* ReuseIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReuseIdentifier.swift; sourceTree = "<group>"; };
+		FADB26262B222E0F002A33D4 /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
+		FADB26292B222E58002A33D4 /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +104,7 @@
 		FA06FD232B20ED5A00C9AC7F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FA06FD222B20ED5A00C9AC7F /* KGLaVIPER.app */,
+				FA06FD222B20ED5A00C9AC7F /* KGHistoryVIPER.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,8 +123,8 @@
 		FA06FD392B20EE2C00C9AC7F /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				FADB26282B222E37002A33D4 /* Atributes */,
 				FA06FD3A2B20EE3D00C9AC7F /* UI */,
-				FA06FD3B2B20EE5400C9AC7F /* BaseRouter.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -124,6 +132,9 @@
 		FA06FD3A2B20EE3D00C9AC7F /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				FA06FD3B2B20EE5400C9AC7F /* BaseRouter.swift */,
+				FADB26242B2213EE002A33D4 /* ReuseIdentifier.swift */,
+				FADB26212B221351002A33D4 /* Views */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -131,6 +142,7 @@
 		FA06FD3D2B20EF6800C9AC7F /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				FA06FD5A2B20F88800C9AC7F /* AppCoordinator.swift */,
 				FA6CEEF92B21D73200FFD6C2 /* History */,
 				FA6CEEFA2B21D73E00FFD6C2 /* Event */,
 				FA6CEEFB2B21D7D800FFD6C2 /* Personalities */,
@@ -144,7 +156,6 @@
 			children = (
 				FA06FD252B20ED5A00C9AC7F /* AppDelegate.swift */,
 				FA06FD272B20ED5A00C9AC7F /* SceneDelegate.swift */,
-				FA06FD5A2B20F88800C9AC7F /* AppCoordinator.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -211,12 +222,29 @@
 			path = Settings;
 			sourceTree = "<group>";
 		};
+		FADB26212B221351002A33D4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FADB26222B22137A002A33D4 /* HistoryCollectionCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FADB26282B222E37002A33D4 /* Atributes */ = {
+			isa = PBXGroup;
+			children = (
+				FADB26262B222E0F002A33D4 /* Styles.swift */,
+				FADB26292B222E58002A33D4 /* Localization.swift */,
+			);
+			path = Atributes;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FA06FD212B20ED5A00C9AC7F /* KGLaVIPER */ = {
+		FA06FD212B20ED5A00C9AC7F /* KGHistoryVIPER */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FA06FD362B20ED5D00C9AC7F /* Build configuration list for PBXNativeTarget "KGLaVIPER" */;
+			buildConfigurationList = FA06FD362B20ED5D00C9AC7F /* Build configuration list for PBXNativeTarget "KGHistoryVIPER" */;
 			buildPhases = (
 				FA06FD1E2B20ED5A00C9AC7F /* Sources */,
 				FA06FD1F2B20ED5A00C9AC7F /* Frameworks */,
@@ -226,9 +254,9 @@
 			);
 			dependencies = (
 			);
-			name = KGLaVIPER;
+			name = KGHistoryVIPER;
 			productName = KGLaVIPER;
-			productReference = FA06FD222B20ED5A00C9AC7F /* KGLaVIPER.app */;
+			productReference = FA06FD222B20ED5A00C9AC7F /* KGHistoryVIPER.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -246,7 +274,7 @@
 					};
 				};
 			};
-			buildConfigurationList = FA06FD1D2B20ED5A00C9AC7F /* Build configuration list for PBXProject "KGLaVIPER" */;
+			buildConfigurationList = FA06FD1D2B20ED5A00C9AC7F /* Build configuration list for PBXProject "KGHistoryVIPER" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -259,7 +287,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FA06FD212B20ED5A00C9AC7F /* KGLaVIPER */,
+				FA06FD212B20ED5A00C9AC7F /* KGHistoryVIPER */,
 			);
 		};
 /* End PBXProject section */
@@ -281,11 +309,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FADB26232B22137A002A33D4 /* HistoryCollectionCollectionViewCell.swift in Sources */,
 				FA06FD552B20EFB800C9AC7F /* EventProtocols.swift in Sources */,
 				FA6CEF072B21DB6B00FFD6C2 /* PersonalityInteractor.swift in Sources */,
 				FA6CEF032B21DB6B00FFD6C2 /* PersonalityPresenter.swift in Sources */,
 				FA06FD562B20EFB800C9AC7F /* EventInteractor.swift in Sources */,
 				FA6CEF082B21DB6B00FFD6C2 /* PersonalityContainer.swift in Sources */,
+				FADB26272B222E0F002A33D4 /* Styles.swift in Sources */,
 				FA06FD262B20ED5A00C9AC7F /* AppDelegate.swift in Sources */,
 				FA06FD522B20EFB800C9AC7F /* EventPresenter.swift in Sources */,
 				FA06FD5B2B20F88800C9AC7F /* AppCoordinator.swift in Sources */,
@@ -293,6 +323,7 @@
 				FA6CEF052B21DB6B00FFD6C2 /* PersonalityViewController.swift in Sources */,
 				FA6CEF102B21DB9900FFD6C2 /* SettingsRouter.swift in Sources */,
 				FA06FD492B20EF9000C9AC7F /* HistoryInteractor.swift in Sources */,
+				FADB26252B2213EE002A33D4 /* ReuseIdentifier.swift in Sources */,
 				FA6CEF062B21DB6B00FFD6C2 /* PersonalityProtocols.swift in Sources */,
 				FA06FD282B20ED5A00C9AC7F /* SceneDelegate.swift in Sources */,
 				FA06FD452B20EF9000C9AC7F /* HistoryPresenter.swift in Sources */,
@@ -300,6 +331,7 @@
 				FA06FD482B20EF9000C9AC7F /* HistoryProtocols.swift in Sources */,
 				FA06FD3C2B20EE5400C9AC7F /* BaseRouter.swift in Sources */,
 				FA06FD462B20EF9000C9AC7F /* HistoryRouter.swift in Sources */,
+				FADB262A2B222E58002A33D4 /* Localization.swift in Sources */,
 				FA6CEF042B21DB6B00FFD6C2 /* PersonalityRouter.swift in Sources */,
 				FA06FD4A2B20EF9000C9AC7F /* HistoryContainer.swift in Sources */,
 				FA6CEF0F2B21DB9900FFD6C2 /* SettingsPresenter.swift in Sources */,
@@ -376,7 +408,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -430,7 +462,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -505,7 +537,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FA06FD1D2B20ED5A00C9AC7F /* Build configuration list for PBXProject "KGLaVIPER" */ = {
+		FA06FD1D2B20ED5A00C9AC7F /* Build configuration list for PBXProject "KGHistoryVIPER" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FA06FD342B20ED5D00C9AC7F /* Debug */,
@@ -514,7 +546,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FA06FD362B20ED5D00C9AC7F /* Build configuration list for PBXNativeTarget "KGLaVIPER" */ = {
+		FA06FD362B20ED5D00C9AC7F /* Build configuration list for PBXNativeTarget "KGHistoryVIPER" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FA06FD372B20ED5D00C9AC7F /* Debug */,

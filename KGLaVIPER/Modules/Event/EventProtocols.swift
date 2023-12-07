@@ -24,8 +24,8 @@ protocol EventViewOutput: AnyObject {
 protocol EventInteractorInput: AnyObject {
 }
 
-protocol SecondInteractorOutput: AnyObject {
+protocol EventInteractorOutput: AnyObject {
 }
 
-protocol SecondRouterInput: AnyObject {
+protocol EventRouterInput: AnyObject {
 }

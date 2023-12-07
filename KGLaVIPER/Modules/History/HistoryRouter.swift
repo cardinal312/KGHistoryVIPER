@@ -18,7 +18,7 @@ extension HistoryRouter: HistoryRouterInput {
         let context = EventContext(moduleOutput: nil)
         let container = EventContainer.assemble(with: context)
         
-        navigationController.pushViewController(container.viewController, animated: true)
+        navigationController?.pushViewController(container.viewController, animated: true)
         
         
     }

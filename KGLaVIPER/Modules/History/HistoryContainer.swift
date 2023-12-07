@@ -25,7 +25,7 @@ final class HistoryContainer {
 		interactor.output = presenter
         
         router.navigationProvider = { [weak viewController] in
-            (viewController?.navigationController)!
+            viewController?.navigationController
         }
 
         return HistoryContainer(view: viewController, input: presenter, router: router)

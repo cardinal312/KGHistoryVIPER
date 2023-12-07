@@ -11,5 +11,5 @@ import UIKit
 final class EventRouter {
 }
 
-extension EventRouter: SecondRouterInput {
+extension EventRouter: EventRouterInput {
 }

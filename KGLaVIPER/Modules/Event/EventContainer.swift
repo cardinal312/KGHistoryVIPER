@@ -11,7 +11,7 @@ import UIKit
 final class EventContainer {
     let input: EventModuleInput
 	let viewController: UIViewController
-	private(set) weak var router: SecondRouterInput!
+	private(set) weak var router: EventRouterInput!
 
 	static func assemble(with context: EventContext) -> EventContainer {
         let router = EventRouter()
@@ -27,7 +27,7 @@ final class EventContainer {
         return EventContainer(view: viewController, input: presenter, router: router)
 	}
 
-    private init(view: UIViewController, input: EventModuleInput, router: SecondRouterInput) {
+    private init(view: UIViewController, input: EventModuleInput, router: EventRouterInput) {
 		self.viewController = view
         self.input = input
 		self.router = router
