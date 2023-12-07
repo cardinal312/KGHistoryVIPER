@@ -1,5 +1,5 @@
 //
-//  SecondViewController.swift
+//  SettingsViewController.swift
 //  KGLaVIPER
 //
 //  Created by Macbook on 7/12/23.
@@ -8,10 +8,10 @@
 
 import UIKit
 
-final class SecondViewController: UIViewController {
-	private let output: SecondViewOutput
+final class SettingsViewController: UIViewController {
+	private let output: SettingsViewOutput
 
-    init(output: SecondViewOutput) {
+    init(output: SettingsViewOutput) {
         self.output = output
         
         super.init(nibName: nil, bundle: nil)
@@ -23,10 +23,8 @@ final class SecondViewController: UIViewController {
     
 	override func viewDidLoad() {
 		super.viewDidLoad()
-        view.backgroundColor = .blue
-        title = "Second VC"
 	}
 }
 
-extension SecondViewController: SecondViewInput {
+extension SettingsViewController: SettingsViewInput {
 }

@@ -8,9 +8,9 @@
 
 import Foundation
 
-final class SecondInteractor {
+final class EventInteractor {
 	weak var output: SecondInteractorOutput?
 }
 
-extension SecondInteractor: SecondInteractorInput {
+extension EventInteractor: EventInteractorInput {
 }

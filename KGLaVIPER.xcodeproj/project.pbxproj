@@ -12,19 +12,31 @@
 		FA06FD2F2B20ED5D00C9AC7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA06FD2E2B20ED5D00C9AC7F /* Assets.xcassets */; };
 		FA06FD322B20ED5D00C9AC7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA06FD302B20ED5D00C9AC7F /* LaunchScreen.storyboard */; };
 		FA06FD3C2B20EE5400C9AC7F /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA06FD3B2B20EE5400C9AC7F /* BaseRouter.swift */; };
-		FA06FD452B20EF9000C9AC7F /* FirstPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA06FD3F2B20EF9000C9AC7F /* FirstPresenter.swift */; };
-		FA06FD462B20EF9000C9AC7F /* FirstRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA06FD402B20EF9000C9AC7F /* FirstRouter.swift */; };
-		FA06FD472B20EF9000C9AC7F /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA06FD412B20EF9000C9AC7F /* FirstViewController.swift */; };
-		FA06FD482B20EF9000C9AC7F /* FirstProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA06FD422B20EF9000C9AC7F /* FirstProtocols.swift */; };
-		FA06FD492B20EF9000C9AC7F /* FirstInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA06FD432B20EF9000C9AC7F /* FirstInteractor.swift */; };
-		FA06FD4A2B20EF9000C9AC7F /* FirstContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA06FD442B20EF9000C9AC7F /* FirstContainer.swift */; };
-		FA06FD522B20EFB800C9AC7F /* SecondPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA06FD4C2B20EFB800C9AC7F /* SecondPresenter.swift */; };
-		FA06FD532B20EFB800C9AC7F /* SecondRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA06FD4D2B20EFB800C9AC7F /* SecondRouter.swift */; };
-		FA06FD542B20EFB800C9AC7F /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA06FD4E2B20EFB800C9AC7F /* SecondViewController.swift */; };
-		FA06FD552B20EFB800C9AC7F /* SecondProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA06FD4F2B20EFB800C9AC7F /* SecondProtocols.swift */; };
-		FA06FD562B20EFB800C9AC7F /* SecondInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA06FD502B20EFB800C9AC7F /* SecondInteractor.swift */; };
-		FA06FD572B20EFB800C9AC7F /* SecondContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA06FD512B20EFB800C9AC7F /* SecondContainer.swift */; };
+		FA06FD452B20EF9000C9AC7F /* HistoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA06FD3F2B20EF9000C9AC7F /* HistoryPresenter.swift */; };
+		FA06FD462B20EF9000C9AC7F /* HistoryRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA06FD402B20EF9000C9AC7F /* HistoryRouter.swift */; };
+		FA06FD472B20EF9000C9AC7F /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA06FD412B20EF9000C9AC7F /* HistoryViewController.swift */; };
+		FA06FD482B20EF9000C9AC7F /* HistoryProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA06FD422B20EF9000C9AC7F /* HistoryProtocols.swift */; };
+		FA06FD492B20EF9000C9AC7F /* HistoryInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA06FD432B20EF9000C9AC7F /* HistoryInteractor.swift */; };
+		FA06FD4A2B20EF9000C9AC7F /* HistoryContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA06FD442B20EF9000C9AC7F /* HistoryContainer.swift */; };
+		FA06FD522B20EFB800C9AC7F /* EventPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA06FD4C2B20EFB800C9AC7F /* EventPresenter.swift */; };
+		FA06FD532B20EFB800C9AC7F /* EventRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA06FD4D2B20EFB800C9AC7F /* EventRouter.swift */; };
+		FA06FD542B20EFB800C9AC7F /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA06FD4E2B20EFB800C9AC7F /* EventViewController.swift */; };
+		FA06FD552B20EFB800C9AC7F /* EventProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA06FD4F2B20EFB800C9AC7F /* EventProtocols.swift */; };
+		FA06FD562B20EFB800C9AC7F /* EventInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA06FD502B20EFB800C9AC7F /* EventInteractor.swift */; };
+		FA06FD572B20EFB800C9AC7F /* EventContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA06FD512B20EFB800C9AC7F /* EventContainer.swift */; };
 		FA06FD5B2B20F88800C9AC7F /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA06FD5A2B20F88800C9AC7F /* AppCoordinator.swift */; };
+		FA6CEF032B21DB6B00FFD6C2 /* PersonalityPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CEEFD2B21DB6B00FFD6C2 /* PersonalityPresenter.swift */; };
+		FA6CEF042B21DB6B00FFD6C2 /* PersonalityRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CEEFE2B21DB6B00FFD6C2 /* PersonalityRouter.swift */; };
+		FA6CEF052B21DB6B00FFD6C2 /* PersonalityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CEEFF2B21DB6B00FFD6C2 /* PersonalityViewController.swift */; };
+		FA6CEF062B21DB6B00FFD6C2 /* PersonalityProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CEF002B21DB6B00FFD6C2 /* PersonalityProtocols.swift */; };
+		FA6CEF072B21DB6B00FFD6C2 /* PersonalityInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CEF012B21DB6B00FFD6C2 /* PersonalityInteractor.swift */; };
+		FA6CEF082B21DB6B00FFD6C2 /* PersonalityContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CEF022B21DB6B00FFD6C2 /* PersonalityContainer.swift */; };
+		FA6CEF0F2B21DB9900FFD6C2 /* SettingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CEF092B21DB9900FFD6C2 /* SettingsPresenter.swift */; };
+		FA6CEF102B21DB9900FFD6C2 /* SettingsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CEF0A2B21DB9900FFD6C2 /* SettingsRouter.swift */; };
+		FA6CEF112B21DB9900FFD6C2 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CEF0B2B21DB9900FFD6C2 /* SettingsViewController.swift */; };
+		FA6CEF122B21DB9900FFD6C2 /* SettingsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CEF0C2B21DB9900FFD6C2 /* SettingsProtocols.swift */; };
+		FA6CEF132B21DB9900FFD6C2 /* SettingsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CEF0D2B21DB9900FFD6C2 /* SettingsInteractor.swift */; };
+		FA6CEF142B21DB9900FFD6C2 /* SettingsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CEF0E2B21DB9900FFD6C2 /* SettingsContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,19 +47,31 @@
 		FA06FD312B20ED5D00C9AC7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA06FD332B20ED5D00C9AC7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA06FD3B2B20EE5400C9AC7F /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
-		FA06FD3F2B20EF9000C9AC7F /* FirstPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPresenter.swift; sourceTree = "<group>"; };
-		FA06FD402B20EF9000C9AC7F /* FirstRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstRouter.swift; sourceTree = "<group>"; };
-		FA06FD412B20EF9000C9AC7F /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		FA06FD422B20EF9000C9AC7F /* FirstProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstProtocols.swift; sourceTree = "<group>"; };
-		FA06FD432B20EF9000C9AC7F /* FirstInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstInteractor.swift; sourceTree = "<group>"; };
-		FA06FD442B20EF9000C9AC7F /* FirstContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstContainer.swift; sourceTree = "<group>"; };
-		FA06FD4C2B20EFB800C9AC7F /* SecondPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPresenter.swift; sourceTree = "<group>"; };
-		FA06FD4D2B20EFB800C9AC7F /* SecondRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondRouter.swift; sourceTree = "<group>"; };
-		FA06FD4E2B20EFB800C9AC7F /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		FA06FD4F2B20EFB800C9AC7F /* SecondProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondProtocols.swift; sourceTree = "<group>"; };
-		FA06FD502B20EFB800C9AC7F /* SecondInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondInteractor.swift; sourceTree = "<group>"; };
-		FA06FD512B20EFB800C9AC7F /* SecondContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondContainer.swift; sourceTree = "<group>"; };
+		FA06FD3F2B20EF9000C9AC7F /* HistoryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryPresenter.swift; sourceTree = "<group>"; };
+		FA06FD402B20EF9000C9AC7F /* HistoryRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryRouter.swift; sourceTree = "<group>"; };
+		FA06FD412B20EF9000C9AC7F /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		FA06FD422B20EF9000C9AC7F /* HistoryProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryProtocols.swift; sourceTree = "<group>"; };
+		FA06FD432B20EF9000C9AC7F /* HistoryInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryInteractor.swift; sourceTree = "<group>"; };
+		FA06FD442B20EF9000C9AC7F /* HistoryContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryContainer.swift; sourceTree = "<group>"; };
+		FA06FD4C2B20EFB800C9AC7F /* EventPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventPresenter.swift; sourceTree = "<group>"; };
+		FA06FD4D2B20EFB800C9AC7F /* EventRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventRouter.swift; sourceTree = "<group>"; };
+		FA06FD4E2B20EFB800C9AC7F /* EventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
+		FA06FD4F2B20EFB800C9AC7F /* EventProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventProtocols.swift; sourceTree = "<group>"; };
+		FA06FD502B20EFB800C9AC7F /* EventInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventInteractor.swift; sourceTree = "<group>"; };
+		FA06FD512B20EFB800C9AC7F /* EventContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventContainer.swift; sourceTree = "<group>"; };
 		FA06FD5A2B20F88800C9AC7F /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		FA6CEEFD2B21DB6B00FFD6C2 /* PersonalityPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalityPresenter.swift; sourceTree = "<group>"; };
+		FA6CEEFE2B21DB6B00FFD6C2 /* PersonalityRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalityRouter.swift; sourceTree = "<group>"; };
+		FA6CEEFF2B21DB6B00FFD6C2 /* PersonalityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalityViewController.swift; sourceTree = "<group>"; };
+		FA6CEF002B21DB6B00FFD6C2 /* PersonalityProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalityProtocols.swift; sourceTree = "<group>"; };
+		FA6CEF012B21DB6B00FFD6C2 /* PersonalityInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalityInteractor.swift; sourceTree = "<group>"; };
+		FA6CEF022B21DB6B00FFD6C2 /* PersonalityContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalityContainer.swift; sourceTree = "<group>"; };
+		FA6CEF092B21DB9900FFD6C2 /* SettingsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPresenter.swift; sourceTree = "<group>"; };
+		FA6CEF0A2B21DB9900FFD6C2 /* SettingsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRouter.swift; sourceTree = "<group>"; };
+		FA6CEF0B2B21DB9900FFD6C2 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		FA6CEF0C2B21DB9900FFD6C2 /* SettingsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsProtocols.swift; sourceTree = "<group>"; };
+		FA6CEF0D2B21DB9900FFD6C2 /* SettingsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsInteractor.swift; sourceTree = "<group>"; };
+		FA6CEF0E2B21DB9900FFD6C2 /* SettingsContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,8 +105,8 @@
 			isa = PBXGroup;
 			children = (
 				FA06FD582B20F80C00C9AC7F /* Application */,
-				FA06FD3D2B20EF6800C9AC7F /* Modules */,
 				FA06FD392B20EE2C00C9AC7F /* Common */,
+				FA06FD3D2B20EF6800C9AC7F /* Modules */,
 				FA06FD592B20F82600C9AC7F /* Supporting */,
 			);
 			path = KGLaVIPER;
@@ -107,36 +131,12 @@
 		FA06FD3D2B20EF6800C9AC7F /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				FA06FD3E2B20EF7100C9AC7F /* First */,
-				FA06FD4B2B20EF9700C9AC7F /* Second */,
+				FA6CEEF92B21D73200FFD6C2 /* History */,
+				FA6CEEFA2B21D73E00FFD6C2 /* Event */,
+				FA6CEEFB2B21D7D800FFD6C2 /* Personalities */,
+				FA6CEEFC2B21D7E600FFD6C2 /* Settings */,
 			);
 			path = Modules;
-			sourceTree = "<group>";
-		};
-		FA06FD3E2B20EF7100C9AC7F /* First */ = {
-			isa = PBXGroup;
-			children = (
-				FA06FD3F2B20EF9000C9AC7F /* FirstPresenter.swift */,
-				FA06FD402B20EF9000C9AC7F /* FirstRouter.swift */,
-				FA06FD412B20EF9000C9AC7F /* FirstViewController.swift */,
-				FA06FD422B20EF9000C9AC7F /* FirstProtocols.swift */,
-				FA06FD432B20EF9000C9AC7F /* FirstInteractor.swift */,
-				FA06FD442B20EF9000C9AC7F /* FirstContainer.swift */,
-			);
-			path = First;
-			sourceTree = "<group>";
-		};
-		FA06FD4B2B20EF9700C9AC7F /* Second */ = {
-			isa = PBXGroup;
-			children = (
-				FA06FD4C2B20EFB800C9AC7F /* SecondPresenter.swift */,
-				FA06FD4D2B20EFB800C9AC7F /* SecondRouter.swift */,
-				FA06FD4E2B20EFB800C9AC7F /* SecondViewController.swift */,
-				FA06FD4F2B20EFB800C9AC7F /* SecondProtocols.swift */,
-				FA06FD502B20EFB800C9AC7F /* SecondInteractor.swift */,
-				FA06FD512B20EFB800C9AC7F /* SecondContainer.swift */,
-			);
-			path = Second;
 			sourceTree = "<group>";
 		};
 		FA06FD582B20F80C00C9AC7F /* Application */ = {
@@ -157,6 +157,58 @@
 				FA06FD332B20ED5D00C9AC7F /* Info.plist */,
 			);
 			path = Supporting;
+			sourceTree = "<group>";
+		};
+		FA6CEEF92B21D73200FFD6C2 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				FA06FD3F2B20EF9000C9AC7F /* HistoryPresenter.swift */,
+				FA06FD402B20EF9000C9AC7F /* HistoryRouter.swift */,
+				FA06FD412B20EF9000C9AC7F /* HistoryViewController.swift */,
+				FA06FD422B20EF9000C9AC7F /* HistoryProtocols.swift */,
+				FA06FD432B20EF9000C9AC7F /* HistoryInteractor.swift */,
+				FA06FD442B20EF9000C9AC7F /* HistoryContainer.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		FA6CEEFA2B21D73E00FFD6C2 /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				FA06FD4C2B20EFB800C9AC7F /* EventPresenter.swift */,
+				FA06FD4D2B20EFB800C9AC7F /* EventRouter.swift */,
+				FA06FD4E2B20EFB800C9AC7F /* EventViewController.swift */,
+				FA06FD4F2B20EFB800C9AC7F /* EventProtocols.swift */,
+				FA06FD502B20EFB800C9AC7F /* EventInteractor.swift */,
+				FA06FD512B20EFB800C9AC7F /* EventContainer.swift */,
+			);
+			path = Event;
+			sourceTree = "<group>";
+		};
+		FA6CEEFB2B21D7D800FFD6C2 /* Personalities */ = {
+			isa = PBXGroup;
+			children = (
+				FA6CEEFD2B21DB6B00FFD6C2 /* PersonalityPresenter.swift */,
+				FA6CEEFE2B21DB6B00FFD6C2 /* PersonalityRouter.swift */,
+				FA6CEEFF2B21DB6B00FFD6C2 /* PersonalityViewController.swift */,
+				FA6CEF002B21DB6B00FFD6C2 /* PersonalityProtocols.swift */,
+				FA6CEF012B21DB6B00FFD6C2 /* PersonalityInteractor.swift */,
+				FA6CEF022B21DB6B00FFD6C2 /* PersonalityContainer.swift */,
+			);
+			path = Personalities;
+			sourceTree = "<group>";
+		};
+		FA6CEEFC2B21D7E600FFD6C2 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				FA6CEF092B21DB9900FFD6C2 /* SettingsPresenter.swift */,
+				FA6CEF0A2B21DB9900FFD6C2 /* SettingsRouter.swift */,
+				FA6CEF0B2B21DB9900FFD6C2 /* SettingsViewController.swift */,
+				FA6CEF0C2B21DB9900FFD6C2 /* SettingsProtocols.swift */,
+				FA6CEF0D2B21DB9900FFD6C2 /* SettingsInteractor.swift */,
+				FA6CEF0E2B21DB9900FFD6C2 /* SettingsContainer.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,22 +281,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA06FD552B20EFB800C9AC7F /* SecondProtocols.swift in Sources */,
-				FA06FD562B20EFB800C9AC7F /* SecondInteractor.swift in Sources */,
+				FA06FD552B20EFB800C9AC7F /* EventProtocols.swift in Sources */,
+				FA6CEF072B21DB6B00FFD6C2 /* PersonalityInteractor.swift in Sources */,
+				FA6CEF032B21DB6B00FFD6C2 /* PersonalityPresenter.swift in Sources */,
+				FA06FD562B20EFB800C9AC7F /* EventInteractor.swift in Sources */,
+				FA6CEF082B21DB6B00FFD6C2 /* PersonalityContainer.swift in Sources */,
 				FA06FD262B20ED5A00C9AC7F /* AppDelegate.swift in Sources */,
-				FA06FD522B20EFB800C9AC7F /* SecondPresenter.swift in Sources */,
+				FA06FD522B20EFB800C9AC7F /* EventPresenter.swift in Sources */,
 				FA06FD5B2B20F88800C9AC7F /* AppCoordinator.swift in Sources */,
-				FA06FD492B20EF9000C9AC7F /* FirstInteractor.swift in Sources */,
+				FA6CEF112B21DB9900FFD6C2 /* SettingsViewController.swift in Sources */,
+				FA6CEF052B21DB6B00FFD6C2 /* PersonalityViewController.swift in Sources */,
+				FA6CEF102B21DB9900FFD6C2 /* SettingsRouter.swift in Sources */,
+				FA06FD492B20EF9000C9AC7F /* HistoryInteractor.swift in Sources */,
+				FA6CEF062B21DB6B00FFD6C2 /* PersonalityProtocols.swift in Sources */,
 				FA06FD282B20ED5A00C9AC7F /* SceneDelegate.swift in Sources */,
-				FA06FD452B20EF9000C9AC7F /* FirstPresenter.swift in Sources */,
-				FA06FD542B20EFB800C9AC7F /* SecondViewController.swift in Sources */,
-				FA06FD482B20EF9000C9AC7F /* FirstProtocols.swift in Sources */,
+				FA06FD452B20EF9000C9AC7F /* HistoryPresenter.swift in Sources */,
+				FA06FD542B20EFB800C9AC7F /* EventViewController.swift in Sources */,
+				FA06FD482B20EF9000C9AC7F /* HistoryProtocols.swift in Sources */,
 				FA06FD3C2B20EE5400C9AC7F /* BaseRouter.swift in Sources */,
-				FA06FD462B20EF9000C9AC7F /* FirstRouter.swift in Sources */,
-				FA06FD4A2B20EF9000C9AC7F /* FirstContainer.swift in Sources */,
-				FA06FD532B20EFB800C9AC7F /* SecondRouter.swift in Sources */,
-				FA06FD472B20EF9000C9AC7F /* FirstViewController.swift in Sources */,
-				FA06FD572B20EFB800C9AC7F /* SecondContainer.swift in Sources */,
+				FA06FD462B20EF9000C9AC7F /* HistoryRouter.swift in Sources */,
+				FA6CEF042B21DB6B00FFD6C2 /* PersonalityRouter.swift in Sources */,
+				FA06FD4A2B20EF9000C9AC7F /* HistoryContainer.swift in Sources */,
+				FA6CEF0F2B21DB9900FFD6C2 /* SettingsPresenter.swift in Sources */,
+				FA6CEF142B21DB9900FFD6C2 /* SettingsContainer.swift in Sources */,
+				FA06FD532B20EFB800C9AC7F /* EventRouter.swift in Sources */,
+				FA06FD472B20EF9000C9AC7F /* HistoryViewController.swift in Sources */,
+				FA6CEF122B21DB9900FFD6C2 /* SettingsProtocols.swift in Sources */,
+				FA06FD572B20EFB800C9AC7F /* EventContainer.swift in Sources */,
+				FA6CEF132B21DB9900FFD6C2 /* SettingsInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

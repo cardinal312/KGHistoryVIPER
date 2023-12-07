@@ -8,8 +8,8 @@
 
 import UIKit
 
-final class SecondRouter {
+final class EventRouter {
 }
 
-extension SecondRouter: SecondRouterInput {
+extension EventRouter: SecondRouterInput {
 }

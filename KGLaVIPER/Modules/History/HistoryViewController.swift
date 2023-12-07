@@ -8,8 +8,8 @@
 
 import UIKit
 
-final class FirstViewController: UIViewController {
-    private let output: FirstViewOutput
+final class HistoryViewController: UIViewController {
+    private let output: HistoryViewOutput
     
     private let pushButton: UIButton = {
         let btn = UIButton(frame: CGRect(x: 0, y: 0, width: 150, height: 50))
@@ -21,7 +21,7 @@ final class FirstViewController: UIViewController {
         return btn
     }()
     
-    init(output: FirstViewOutput) {
+    init(output: HistoryViewOutput) {
         self.output = output
         
         super.init(nibName: nil, bundle: nil)
@@ -49,7 +49,7 @@ final class FirstViewController: UIViewController {
 
 }
 
-extension FirstViewController: FirstViewInput {
+extension HistoryViewController: HistoryViewInput {
     
     @objc private func pushButtonTapped() {
         output.showSecondVC()

@@ -8,15 +8,15 @@
 
 import UIKit
 
-final class FirstRouter: BaseRouter {
+final class HistoryRouter: BaseRouter {
 }
 
-extension FirstRouter: FirstRouterInput {
+extension HistoryRouter: HistoryRouterInput {
     
     func showSecondVC() {
         
-        let context = SecondContext(moduleOutput: nil)
-        let container = SecondContainer.assemble(with: context)
+        let context = EventContext(moduleOutput: nil)
+        let container = EventContainer.assemble(with: context)
         
         navigationController.pushViewController(container.viewController, animated: true)
         

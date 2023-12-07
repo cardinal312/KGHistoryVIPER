@@ -17,8 +17,8 @@ final class AppCoordinator {
     
     func start() {
         guard let window = window else { return }
-        let context = FirstContext(moduleOutput: nil)
-        let container = FirstContainer.assemble(with: context)
+        let context = HistoryContext(moduleOutput: nil)
+        let container = HistoryContainer.assemble(with: context)
         let nav = UINavigationController(rootViewController: container.viewController)
         window.rootViewController = nav
         window.makeKeyAndVisible()
