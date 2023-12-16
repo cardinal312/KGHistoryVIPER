@@ -25,6 +25,9 @@
 		FA06FD562B20EFB800C9AC7F /* EventInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA06FD502B20EFB800C9AC7F /* EventInteractor.swift */; };
 		FA06FD572B20EFB800C9AC7F /* EventContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA06FD512B20EFB800C9AC7F /* EventContainer.swift */; };
 		FA06FD5B2B20F88800C9AC7F /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA06FD5A2B20F88800C9AC7F /* AppCoordinator.swift */; };
+		FA2E14A12B26F3E50070101D /* EventHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2E14A02B26F3E50070101D /* EventHeaderView.swift */; };
+		FA2E14A32B273D130070101D /* EventsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2E14A22B273D130070101D /* EventsTableViewCell.swift */; };
+		FA2E14B22B2757750070101D /* PersonalitiesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2E14B12B2757750070101D /* PersonalitiesTableViewCell.swift */; };
 		FA6CEF032B21DB6B00FFD6C2 /* PersonalityPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CEEFD2B21DB6B00FFD6C2 /* PersonalityPresenter.swift */; };
 		FA6CEF042B21DB6B00FFD6C2 /* PersonalityRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CEEFE2B21DB6B00FFD6C2 /* PersonalityRouter.swift */; };
 		FA6CEF052B21DB6B00FFD6C2 /* PersonalityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6CEEFF2B21DB6B00FFD6C2 /* PersonalityViewController.swift */; };
@@ -64,6 +67,9 @@
 		FA06FD502B20EFB800C9AC7F /* EventInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventInteractor.swift; sourceTree = "<group>"; };
 		FA06FD512B20EFB800C9AC7F /* EventContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventContainer.swift; sourceTree = "<group>"; };
 		FA06FD5A2B20F88800C9AC7F /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		FA2E14A02B26F3E50070101D /* EventHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventHeaderView.swift; sourceTree = "<group>"; };
+		FA2E14A22B273D130070101D /* EventsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsTableViewCell.swift; sourceTree = "<group>"; };
+		FA2E14B12B2757750070101D /* PersonalitiesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalitiesTableViewCell.swift; sourceTree = "<group>"; };
 		FA6CEEFD2B21DB6B00FFD6C2 /* PersonalityPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalityPresenter.swift; sourceTree = "<group>"; };
 		FA6CEEFE2B21DB6B00FFD6C2 /* PersonalityRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalityRouter.swift; sourceTree = "<group>"; };
 		FA6CEEFF2B21DB6B00FFD6C2 /* PersonalityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalityViewController.swift; sourceTree = "<group>"; };
@@ -226,6 +232,9 @@
 			isa = PBXGroup;
 			children = (
 				FADB26222B22137A002A33D4 /* HistoryCollectionCollectionViewCell.swift */,
+				FA2E14A02B26F3E50070101D /* EventHeaderView.swift */,
+				FA2E14A22B273D130070101D /* EventsTableViewCell.swift */,
+				FA2E14B12B2757750070101D /* PersonalitiesTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -318,6 +327,8 @@
 				FADB26272B222E0F002A33D4 /* Styles.swift in Sources */,
 				FA06FD262B20ED5A00C9AC7F /* AppDelegate.swift in Sources */,
 				FA06FD522B20EFB800C9AC7F /* EventPresenter.swift in Sources */,
+				FA2E14A12B26F3E50070101D /* EventHeaderView.swift in Sources */,
+				FA2E14A32B273D130070101D /* EventsTableViewCell.swift in Sources */,
 				FA06FD5B2B20F88800C9AC7F /* AppCoordinator.swift in Sources */,
 				FA6CEF112B21DB9900FFD6C2 /* SettingsViewController.swift in Sources */,
 				FA6CEF052B21DB6B00FFD6C2 /* PersonalityViewController.swift in Sources */,
@@ -325,6 +336,7 @@
 				FA06FD492B20EF9000C9AC7F /* HistoryInteractor.swift in Sources */,
 				FADB26252B2213EE002A33D4 /* ReuseIdentifier.swift in Sources */,
 				FA6CEF062B21DB6B00FFD6C2 /* PersonalityProtocols.swift in Sources */,
+				FA2E14B22B2757750070101D /* PersonalitiesTableViewCell.swift in Sources */,
 				FA06FD282B20ED5A00C9AC7F /* SceneDelegate.swift in Sources */,
 				FA06FD452B20EF9000C9AC7F /* HistoryPresenter.swift in Sources */,
 				FA06FD542B20EFB800C9AC7F /* EventViewController.swift in Sources */,
@@ -484,8 +496,8 @@
 				INFOPLIST_FILE = KGLaVIPER/Supporting/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -515,8 +527,8 @@
 				INFOPLIST_FILE = KGLaVIPER/Supporting/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

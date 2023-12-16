@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class EventContainer {
+class EventContainer {
     let input: EventModuleInput
 	let viewController: UIViewController
 	private(set) weak var router: EventRouterInput!

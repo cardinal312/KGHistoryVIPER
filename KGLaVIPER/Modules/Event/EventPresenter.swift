@@ -8,7 +8,7 @@
 
 import Foundation
 
-final class EventPresenter {
+ class EventPresenter {
 	weak var view: EventViewInput?
     weak var moduleOutput: EventModuleOutput?
     

@@ -10,8 +10,8 @@ import UIKit
 final class AppCoordinator {
     
     private let window: UIWindow
-    private lazy var tabBarController = UITabBarController()
-    private lazy var navigationControllers = AppCoordinator.makeNavigationControllers()
+    private let tabBarController = UITabBarController()
+    private let navigationControllers = AppCoordinator.makeNavigationControllers()
     
     init(window: UIWindow) {
         self.window = window
@@ -40,27 +40,34 @@ private extension AppCoordinator {
         }
         let context = HistoryContext(moduleOutput: nil)
         let container = HistoryContainer.assemble(with: context)
-        container.viewController.view.backgroundColor = .yellow
-        navController.setViewControllers([container.viewController], animated: false)
-        container.viewController.navigationItem.title = NavControllerType.history.title
+        let vc = container.viewController
+        vc.view.backgroundColor = .yellow
+        vc.navigationItem.title = NavControllerType.history.title
+        navController.setViewControllers([vc], animated: false)
+        
     }
     
     func setupEvent() {
         guard let navController = self.navigationControllers[.event] else {
             fatalError("can't find navController")
         }
-        let viewController = UIViewController()
-        viewController.view.backgroundColor = .brown
-        navController.setViewControllers([viewController], animated: false)
-        viewController.navigationItem.title = NavControllerType.event.title
+        let context = EventContext(moduleOutput: nil)
+        let container = EventContainer.assemble(with: context)
+        let vc = container.viewController
+        vc.view.backgroundColor = .brown
+        vc.navigationItem.title = NavControllerType.event.title
+        navController.setViewControllers([vc], animated: false)
+        
     }
     
     func setupPersonality() {
         guard let navController = self.navigationControllers[.personality] else {
             fatalError("can't find navController")
         }
-        let viewController = UIViewController()
-        viewController.view.backgroundColor = .purple
+        
+        let context = PersonalityContext(moduleOutput: nil)
+        let container = PersonalityContainer.assemble(with: context)
+        let viewController = container.viewController
         navController.setViewControllers([viewController], animated: false)
         viewController.navigationItem.title = NavControllerType.personality.title
     }
@@ -69,15 +76,17 @@ private extension AppCoordinator {
         guard let navController = self.navigationControllers[.settings] else {
             fatalError("can't find navController")
         }
-        let viewController = UIViewController()
-        viewController.view.backgroundColor = .blue
+        let context = SettingsContext(moduleOutput: nil)
+        let container = SettingsContainer.assemble(with: context)
+        let viewController = container.viewController
+        //viewController.view.backgroundColor = .blue
         navController.setViewControllers([viewController], animated: false)
         viewController.navigationItem.title = NavControllerType.settings.title
     }
     
     func setupAppearance() {
-                UINavigationBar.appearance().barTintColor = .white
-                UINavigationBar.appearance().tintColor = .black
+        UINavigationBar.appearance().barTintColor = .white
+        UINavigationBar.appearance().tintColor = .black
         
         if #available(iOS 13.0, *) {
             let appearance = UINavigationBarAppearance()
@@ -113,7 +122,7 @@ private extension AppCoordinator {
                                           image: navControllerKey.image,
                                           tag: navControllerKey.rawValue)
             navigationController.tabBarItem = tabBarItem
-            navigationController.tabBarItem.selectedImage = navControllerKey.selectedImage
+            //navigationController.tabBarItem.selectedImage = navControllerKey.selectedImage
             //navigationController.navigationBar.prefersLargeTitles = true
             result[navControllerKey] = navigationController
         }
@@ -121,7 +130,7 @@ private extension AppCoordinator {
     }
 }
 
-    private enum NavControllerType: Int, CaseIterable {
+private enum NavControllerType: Int, CaseIterable {
     case history, event, personality, settings
     
     var title: String {

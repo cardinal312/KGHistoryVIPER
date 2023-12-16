@@ -8,7 +8,7 @@
 
 import Foundation
 
-final class EventInteractor {
+class EventInteractor {
 	weak var output: EventInteractorOutput?
 }
 

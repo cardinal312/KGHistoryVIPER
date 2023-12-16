@@ -15,10 +15,7 @@ extension HistoryRouter: HistoryRouterInput {
     
     func showSecondVC() {
         
-        let context = EventContext(moduleOutput: nil)
-        let container = EventContainer.assemble(with: context)
-        
-        navigationController?.pushViewController(container.viewController, animated: true)
+        navigationController?.pushViewController(UIViewController(), animated: true)
         
         
     }

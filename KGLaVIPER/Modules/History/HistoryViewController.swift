@@ -22,6 +22,7 @@ final class HistoryViewController: UIViewController {
         let collection = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collection.register(HistoryCollectionCollectionViewCell.self, forCellWithReuseIdentifier: HistoryCollectionCollectionViewCell.reuseIdentifier)
         collection.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cell")
+        collection.showsVerticalScrollIndicator = false
         collection.bounces = false
         return collection
     }()
@@ -78,6 +79,11 @@ extension HistoryViewController: UICollectionViewDelegate, UICollectionViewDataS
             return UICollectionViewCell()
         }
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        collectionView.deselectItem(at: indexPath, animated: true)
+        print(indexPath)
     }
 }
 

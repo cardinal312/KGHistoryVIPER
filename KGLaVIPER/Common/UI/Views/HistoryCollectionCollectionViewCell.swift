@@ -16,6 +16,7 @@ final class HistoryCollectionCollectionViewCell: UICollectionViewCell {
         imageView.contentMode = .scaleAspectFill
         imageView.backgroundColor = .blue
         imageView.tintColor = .red
+        imageView.layer.masksToBounds = true
         return imageView
     }()
     
@@ -58,6 +59,13 @@ final class HistoryCollectionCollectionViewCell: UICollectionViewCell {
         layer.shadowRadius = 5
         layer.shadowOpacity = 5
         backgroundColor = .gray.withAlphaComponent(0.1)
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+//        historyImageView.image = nil
+//        titleLabel.text = nil
+//        descriptionLabel.text = nil
     }
     
     private func setupConstaints() {

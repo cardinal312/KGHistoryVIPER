@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class EventRouter {
+ class EventRouter {
 }
 
 extension EventRouter: EventRouterInput {
