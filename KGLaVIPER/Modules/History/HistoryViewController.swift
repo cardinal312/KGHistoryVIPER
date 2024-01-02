@@ -12,7 +12,7 @@ final class HistoryViewController: UIViewController {
     private let output: HistoryViewOutput
     
     //MARK: - UI Components
-    private let historyCollectionView: UICollectionView = {
+    private lazy var historyCollectionView: UICollectionView = {
         
         let layout = UICollectionViewFlowLayout()
         layout.minimumLineSpacing = 15
@@ -24,6 +24,8 @@ final class HistoryViewController: UIViewController {
         collection.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cell")
         collection.showsVerticalScrollIndicator = false
         collection.bounces = false
+        collection.delegate = self
+        collection.dataSource = self
         return collection
     }()
     
@@ -31,7 +33,6 @@ final class HistoryViewController: UIViewController {
     init(output: HistoryViewOutput) {
         self.output = output
         super.init(nibName: nil, bundle: nil)
-        
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -40,18 +41,14 @@ final class HistoryViewController: UIViewController {
     
     override func loadView() {
         super.loadView()
-        
-        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .purple
         view.addSubview(historyCollectionView)
-        historyCollectionView.delegate = self
-        historyCollectionView.dataSource = self
-        navigationController?.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "car"), style: .plain, target: nil, action: nil)
-        
-        
+       
+        navigationController?.navigationBar.topItem?.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "globe"), style: .plain, target: self, action: #selector(rightBarButtonTapped))
     }
     
     override func viewDidLayoutSubviews() {
@@ -63,8 +60,7 @@ final class HistoryViewController: UIViewController {
 extension HistoryViewController: HistoryViewInput {
     
     @objc private func rightBarButtonTapped() {
-        //  output.showSecondVC()
-        print(ObjectIdentifier(self))
+            print(ObjectIdentifier(self))
     }
 }
 
@@ -90,6 +86,6 @@ extension HistoryViewController: UICollectionViewDelegate, UICollectionViewDataS
 extension HistoryViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: view.bounds.size.width / 2.2, height: view.bounds.size.height / 3.5)
+        return CGSize(width: view.bounds.size.width / 2.2, height: view.bounds.size.height / 3.9)
     }
 }

@@ -9,6 +9,8 @@ import UIKit
 
 final class EventHeaderView: UIView {
     
+    var eventHeaderViewClosure: (() -> Void)?
+    
     //MARK: - UI Components
     
     private let penImageView: UIImageView = {
@@ -48,8 +50,15 @@ final class EventHeaderView: UIView {
         button.translatesAutoresizingMaskIntoConstraints = false
         button.layer.masksToBounds = false
         button.clipsToBounds = true
+        button.addTarget(self, action: #selector(shuffledButtonTapped), for: .touchUpInside)
         return button
     }()
+    
+    @objc private func shuffledButtonTapped() {
+        //print(#function)
+        
+        self.eventHeaderViewClosure?()
+    }
 
     override init(frame: CGRect) {
         super.init(frame: frame)

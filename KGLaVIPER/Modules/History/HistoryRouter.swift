@@ -8,15 +8,11 @@
 
 import UIKit
 
-final class HistoryRouter: BaseRouter {
-}
+final class HistoryRouter: BaseRouter {}
 
 extension HistoryRouter: HistoryRouterInput {
     
     func showSecondVC() {
-        
         navigationController?.pushViewController(UIViewController(), animated: true)
-        
-        
     }
 }

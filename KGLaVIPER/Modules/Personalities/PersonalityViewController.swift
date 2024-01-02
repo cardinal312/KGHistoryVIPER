@@ -29,14 +29,7 @@ final class PersonalityViewController: UIViewController {
 
     init(output: PersonalityViewOutput) {
         self.output = output
-        
-//        let view = UIView()
-//        view.backgroundColor = .red
-        
-        
         super.init(nibName: nil, bundle: nil)
-//        view.addSubview(personalitiesTableView)
-//        self.view = view
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -47,24 +40,15 @@ final class PersonalityViewController: UIViewController {
 		super.viewDidLoad()
         view.backgroundColor = .white
         view.addSubview(personalitiesTableView)
-        
-        navigationController?.hidesBarsOnTap = true
-        navigationController?.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "airplane"), style: .plain, target: nil, action: nil)
-        
 	}
-    
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        
         self.personalitiesTableView.frame = view.bounds
     }
-    
-    
 }
 
-extension PersonalityViewController: PersonalityViewInput {
-}
+extension PersonalityViewController: PersonalityViewInput { }
 
 extension PersonalityViewController: UITableViewDataSource {
     
@@ -76,7 +60,6 @@ extension PersonalityViewController: UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: PersonalitiesTableViewCell.reuseIdentifier) else {
             return UITableViewCell()
         }
-    
         //TODO: - Should be implement
        // cell.setupData(with _model: IndexPath)
         return cell
@@ -91,7 +74,7 @@ extension PersonalityViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        print(indexPath)
+        print("selected cell index: \(indexPath.row)")
     }
 }
 

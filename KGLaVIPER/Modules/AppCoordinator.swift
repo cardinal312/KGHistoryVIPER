@@ -9,9 +9,9 @@ import UIKit
 
 final class AppCoordinator {
     
-    private let window: UIWindow
-    private let tabBarController = UITabBarController()
-    private let navigationControllers = AppCoordinator.makeNavigationControllers()
+    private var window: UIWindow
+    private lazy var tabBarController = UITabBarController()
+    private lazy var navigationControllers = AppCoordinator.makeNavigationControllers()
     
     init(window: UIWindow) {
         self.window = window
@@ -19,6 +19,7 @@ final class AppCoordinator {
     }
     
     func start() {
+        
         self.setupHistory()
         self.setupEvent()
         self.setupPersonality()
@@ -40,10 +41,9 @@ private extension AppCoordinator {
         }
         let context = HistoryContext(moduleOutput: nil)
         let container = HistoryContainer.assemble(with: context)
-        let vc = container.viewController
-        vc.view.backgroundColor = .yellow
-        vc.navigationItem.title = NavControllerType.history.title
-        navController.setViewControllers([vc], animated: false)
+       
+        navController.setViewControllers([container.viewController], animated: false)
+        container.viewController.navigationItem.title = NavControllerType.history.title
         
     }
     
@@ -54,8 +54,8 @@ private extension AppCoordinator {
         let context = EventContext(moduleOutput: nil)
         let container = EventContainer.assemble(with: context)
         let vc = container.viewController
-        vc.view.backgroundColor = .brown
-        vc.navigationItem.title = NavControllerType.event.title
+       // vc.view.backgroundColor = .brown
+        //vc.navigationItem.title = NavControllerType.event.title
         navController.setViewControllers([vc], animated: false)
         
     }
@@ -69,7 +69,7 @@ private extension AppCoordinator {
         let container = PersonalityContainer.assemble(with: context)
         let viewController = container.viewController
         navController.setViewControllers([viewController], animated: false)
-        viewController.navigationItem.title = NavControllerType.personality.title
+        //viewController.navigationItem.title = NavControllerType.personality.title
     }
     
     func setupSettings() {
@@ -81,37 +81,32 @@ private extension AppCoordinator {
         let viewController = container.viewController
         //viewController.view.backgroundColor = .blue
         navController.setViewControllers([viewController], animated: false)
-        viewController.navigationItem.title = NavControllerType.settings.title
+        //viewController.navigationItem.title = NavControllerType.settings.title
     }
     
     func setupAppearance() {
         UINavigationBar.appearance().barTintColor = .white
         UINavigationBar.appearance().tintColor = .black
-        
+
         if #available(iOS 13.0, *) {
             let appearance = UINavigationBarAppearance()
-            appearance.configureWithOpaqueBackground()
-            
             appearance.backgroundColor = .white
-            UINavigationBar.appearance().isTranslucent = false
-            
+
             UINavigationBar.appearance().tintColor = .black
             UINavigationBar.appearance().standardAppearance = appearance
             UINavigationBar.appearance().compactAppearance = appearance
             UINavigationBar.appearance().scrollEdgeAppearance = appearance
-            
         } else {
-            UINavigationBar.appearance().tintColor = .green
+            UINavigationBar.appearance().tintColor = .black
             UINavigationBar.appearance().barTintColor = .purple
             UINavigationBar.appearance().isTranslucent = false
         }
         UINavigationBar.appearance().shadowImage = UIImage()
-        
+
         UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black]
-        
-        UITabBar.appearance().backgroundColor = .white
-        UITabBar.appearance().tintColor = .blue
-        UINavigationBar.appearance().isTranslucent = false
+
+        UITabBar.appearance().barTintColor = .white
+        UITabBar.appearance().tintColor = .systemBlue
     }
     
     static func makeNavigationControllers() -> [NavControllerType: UINavigationController] {
@@ -122,7 +117,7 @@ private extension AppCoordinator {
                                           image: navControllerKey.image,
                                           tag: navControllerKey.rawValue)
             navigationController.tabBarItem = tabBarItem
-            //navigationController.tabBarItem.selectedImage = navControllerKey.selectedImage
+            navigationController.tabBarItem.selectedImage = navControllerKey.selectedImage
             //navigationController.navigationBar.prefersLargeTitles = true
             result[navControllerKey] = navigationController
         }
@@ -130,7 +125,7 @@ private extension AppCoordinator {
     }
 }
 
-private enum NavControllerType: Int, CaseIterable {
+fileprivate enum NavControllerType: Int, CaseIterable {
     case history, event, personality, settings
     
     var title: String {

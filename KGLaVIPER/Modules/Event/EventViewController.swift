@@ -12,11 +12,7 @@ import UIKit
 	private let output: EventViewOutput
     
     //MARK: - UI Components
-    
-    
-    
-    private let eventsTableView: UITableView = {
-        
+    private lazy var eventsTableView: UITableView = {
         let headerView = EventHeaderView()
         let table = UITableView(frame: .zero, style: .plain)
         table.backgroundColor = .red.withAlphaComponent(0.7)
@@ -28,6 +24,8 @@ import UIKit
         table.separatorInset = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
         table.estimatedRowHeight = 200
         table.rowHeight = UITableView.automaticDimension
+        table.delegate = self
+        table.dataSource = self
         return table
     }()
 
@@ -36,14 +34,7 @@ import UIKit
         
         super.init(nibName: nil, bundle: nil)
     }
-    
-//    override func loadView() {
-//        super.loadView()
-//        let view = UIView()
-//        view.backgroundColor = .blue
-//        self.view = view
-//    }
-    
+
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -52,24 +43,17 @@ import UIKit
 		super.viewDidLoad()
         
         view.addSubview(eventsTableView)
-        
-        eventsTableView.delegate = self
-        eventsTableView.dataSource = self
-        
-        navigationController?.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "car"), style: .plain, target: nil, action: nil)
+
 	}
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         eventsTableView.tableHeaderView = EventHeaderView()
         self.eventsTableView.frame = view.bounds
-        
     }
 }
 
-extension EventViewController: EventViewInput {
-    
-}
+extension EventViewController: EventViewInput { }
 
 extension EventViewController: UITableViewDataSource {
     
@@ -79,19 +63,8 @@ extension EventViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: EventsTableViewCell.reuseIdentifier) else { return UITableViewCell() }
-//        cell?.textLabel?.text = "Events table view cell"
-//    cell?.imageView?.image = UIImage(systemName: "car")
-//        var content = cell?.defaultContentConfiguration()
-//        content?.text = "Events table view cell"
-//        content?.secondaryText = "secondaryText"
-//        //content?.attributedText = NSAttributedString(string: "attributedText")
-//        //content?.secondaryAttributedText = NSAttributedString(string: "secondaryAttributedText")
-//        content?.image = UIImage(systemName: "airplane")
-      //  cell?.contentConfiguration = content
         return cell
     }
-    
-    
 }
 
 extension EventViewController: UITableViewDelegate {
@@ -99,7 +72,6 @@ extension EventViewController: UITableViewDelegate {
 //    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
 //        return 250
 //    }
-    
 }
 
 private extension EventViewController {
